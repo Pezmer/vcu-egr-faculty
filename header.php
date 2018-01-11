@@ -55,19 +55,18 @@
         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
         <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
         <h3 class="site-school">
-          <?php if (get_theme_mod( 'school_name' ) == true): ?>
+          <?php if (get_theme_mod( 'school_name', true ) == true): ?>
             <a href="https://egr.vcu.edu">School of Engineering</a>
           <?php endif; ?>
         </div>
         </div></div>
       <?php
-
       // If no custom header, then just display the site title and tagline
       } else {
       ?>
         <div class="container">
           <?php //if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
-          <?php if (get_theme_mod( 'department_badge_display' ) == true): ?>
+          <?php if (get_theme_mod( 'department_badge_display', true ) == true): ?>
             <?php $department_badge = get_theme_mod( 'department_badge'); ?>
             <div class="site-branding-badge">
               <img alt="<?php bloginfo( 'title' ); ?>&rsquo;s department badge" src="<?php echo get_stylesheet_directory_uri() . '/images/' . $department_badge . '-icon.png' ?>" />
@@ -78,7 +77,7 @@
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
             <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
             <h3 class="site-school">
-              <?php if (get_theme_mod( 'school_name' ) == true): ?>
+              <?php if (get_theme_mod( 'school_name', true ) == true): ?>
                 <a href="https://egr.vcu.edu">School of Engineering</a>
               <?php endif; ?>
             </h3>
@@ -114,7 +113,6 @@
             .'<span class="icon-bar"></span>'
             .'<span class="icon-bar"></span>'
             .'</button>';
-
     // Site title (Bootstrap "brand") in navbar. Hidden by default. Customizer will
     // display it if user turns off the main site title and tagline.
     $navbar .= '<a class="navbar-brand" href="'
@@ -124,7 +122,6 @@
       .'</a>';
     
         $navbar .= '</div><!-- navbar-header -->';
-
     // Display the desktop navbar
     $navbar .= '<div class="navbar-collapse collapse">';
     $navbar .= wp_nav_menu( 
