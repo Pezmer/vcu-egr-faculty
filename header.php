@@ -55,7 +55,7 @@
         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
         <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
         <h3 class="site-school">
-          <?php if (get_theme_mod( 'school_name', true ) == true): ?>
+          <?php if (get_theme_mod( 'school_name' ) == true): ?>
             <a href="https://egr.vcu.edu">School of Engineering</a>
           <?php endif; ?>
         </div>
@@ -67,7 +67,7 @@
       ?>
         <div class="container">
           <?php //if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
-          <?php if (get_theme_mod( 'department_badge_display', true ) == true): ?>
+          <?php if (get_theme_mod( 'department_badge_display' ) == true): ?>
             <?php $department_badge = get_theme_mod( 'department_badge'); ?>
             <div class="site-branding-badge">
               <img alt="<?php bloginfo( 'title' ); ?>&rsquo;s department badge" src="<?php echo get_stylesheet_directory_uri() . '/images/' . $department_badge . '-icon.png' ?>" />
@@ -78,7 +78,7 @@
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' )?></a></h1>
             <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
             <h3 class="site-school">
-              <?php if (get_theme_mod( 'school_name', true ) == true): ?>
+              <?php if (get_theme_mod( 'school_name' ) == true): ?>
                 <a href="https://egr.vcu.edu">School of Engineering</a>
               <?php endif; ?>
             </h3>
