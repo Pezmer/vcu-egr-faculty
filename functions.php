@@ -344,7 +344,17 @@ add_action( 'wp_head', 'mytheme_customize_css');
 register_sidebar( array(
 	'name' 			=> __( 'Footer', 'flat-bootstrap-child-egr-faculty' ),
 	'id' 			=> 'sidebar-footer',
-	'description' 	=> __( 'Optional site footer widgets. Add text-widget Contact and Address sections, otherwise the standard egr.vcu.edu address and contact button will be used.', 'flat-bootstrap-child-egr-faculty' ),
+	'description' 	=> __( 'Optional site footer widgets. Suggestion: Add text-widget Contact and Address sections, otherwise the standard egr.vcu.edu address and contact button will be used.', 'flat-bootstrap-child-egr-faculty' ),
+	'before_widget' => '<br><aside id="%1$s" class="widget clearfix %2$s">',
+	'after_widget' 	=> "</aside>",
+	'before_title' 	=> '<h2 class="widget-title">',
+	'after_title' 	=> '</h2>',
+) );
+
+register_sidebar( array(
+	'name' 			=> __( 'EGR Sidebar (custom)', 'flat-bootstrap-child-egr-faculty' ),
+	'id' 			=> 'sidebar-egr-custom',
+	'description' 	=> __( 'Custom sidebar for SOE Faculty Labs including a search form and any widgets you choose to add here. Suggestion: Add text-widget Contact and Address sections.' ),
 	'before_widget' => '<br><aside id="%1$s" class="widget clearfix %2$s">',
 	'after_widget' 	=> "</aside>",
 	'before_title' 	=> '<h2 class="widget-title">',
@@ -369,4 +379,10 @@ endif; // end ! function_exists
 add_action( 'init', 'remove_plugin_recommendations' );
 function remove_plugin_recommendations() {
 	remove_action( 'tgmpa_register', 'xsbf_bootstrap_register_required_plugins' );
+}
+
+add_action( 'init', 'unregister_sidebars' );
+function unregister_sidebars() {
+	unregister_sidebar( 'sidebar-1' );
+	unregister_sidebar( 'sidebar-2' );
 }
