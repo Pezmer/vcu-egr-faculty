@@ -19,7 +19,15 @@
       <?php get_search_form(); ?>
     </aside>
 
-    <!-- If EGR Sidebar (custom) is populated, add it's widgets under the search form -->
-    <?php if ( ! dynamic_sidebar( 'sidebar-egr-custom' ) ) : ?>
+    <!-- If EGR Sidebar (custom) is populated, add its widgets under the search form -->
+    <?php // if ( ! dynamic_sidebar( 'sidebar-egr-custom' ) ) : ?>
+    <?php if ( is_active_sidebar( 'sidebar-egr-custom' ) ) : ?>
+      <?php dynamic_sidebar( 'sidebar-egr-custom' ) ?>
+    <!-- If EGR Sidebar (custom) is not populated, add Contact section with site admin's email -->
+    <?php else : ?>
+      <aside id="sidebar-egr-contact" class="widget widget_contact">
+        <h2 class="widget-title">Contact</h2>
+        <a href="mailto:<?php echo get_bloginfo( 'admin_email' ); ?>"><?php echo get_bloginfo( 'admin_email' ); ?></a>
+      </aside>
     <?php endif; // end sidebar widget area ?>
   </div><!-- #secondary -->
