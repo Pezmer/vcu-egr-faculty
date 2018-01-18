@@ -1,2 +1,2 @@
-SOE Faculty Labs
+Engineering Faculty Labs
 ========

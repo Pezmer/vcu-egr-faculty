@@ -354,7 +354,7 @@ register_sidebar( array(
 register_sidebar( array(
 	'name' 			=> __( 'EGR Sidebar (custom)', 'flat-bootstrap-child-egr-faculty' ),
 	'id' 			=> 'sidebar-egr-custom',
-	'description' 	=> __( 'Custom sidebar for SOE Faculty Labs including a search form and any widgets you choose to add here. Suggestion: Add text-widget Contact and Address sections.' ),
+	'description' 	=> __( 'Custom sidebar for Engineering Faculty Labs including a search form and any widgets you choose to add here. Suggestion: Add text-widget Contact and Address sections.' ),
 	'before_widget' => '<br><aside id="%1$s" class="widget clearfix %2$s">',
 	'after_widget' 	=> "</aside>",
 	'before_title' 	=> '<h2 class="widget-title">',
