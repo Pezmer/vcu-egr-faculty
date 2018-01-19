@@ -383,6 +383,24 @@ function remove_plugin_recommendations() {
 
 add_action( 'init', 'unregister_sidebars' );
 function unregister_sidebars() {
+	// remove main sidebar so we can "get rid of" the default widgets
 	unregister_sidebar( 'sidebar-1' );
+	// remove footer sidebar so we can customize our own
 	unregister_sidebar( 'sidebar-2' );
+	// remove page bottom sidebar so we can re-register it with the structure to make it look like the preview example
+	unregister_sidebar( 'sidebar-4' );
+}
+
+add_action( 'init', 'register_sidebar_page_bottom' );
+function register_sidebar_page_bottom() {
+  // Page Bottom (Before Footer) Widget Area. Single Column.
+	register_sidebar( array(
+		'name' 			=> __( 'Page Bottom', 'flat-bootstrap-child-egr-faculty' ),
+		'id' 			=> 'sidebar-4',
+		'description' 	=> __( 'Optional section before the footer. This is a single column area that spans the full width of the page. Add a blank text widget to remove the example.', 'flat-bootstrap' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s section bg-lightgreen text-center clearfix"><div class="container">',
+		'before_title' 	=> '<h2 class="widget-title">',
+		'after_title' 	=> '</h2>',
+		'after_widget' 	=> '</div><!-- container --></aside>',
+	) );
 }
