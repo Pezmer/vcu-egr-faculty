@@ -20,8 +20,19 @@ I know the last thing you want to do right now is wait for a go-ahead response, 
 
 ## I have access to the theme, now what?
 
-Congratulations, now the fun begins! Go ahead and login to your [Ram Pages Dashboard](https://rampages.us/wp-admin/) and navigate to your site's WordPress dashboard. From here, navigate to `Appearance -> Themes`. If you requested the theme to be made available in your list, perform a page search (that's `ctrl+f` for you Windows folks) for Engineering Faculty Labs and click the respective `Live Preview` button. If you went all-in on the theme and already have it activated, you'll find it in the first position with a `Customize` button ― Go ahead and click that.
+Congratulations, now the fun begins!
+
+Go ahead and login to your [Ram Pages Dashboard](https://rampages.us/wp-admin/) and navigate to your site's WordPress dashboard. From here, navigate to `Appearance -> Themes`. If you requested the theme to be made available in your list, perform a page search (that's `ctrl+f` for you Windows folks) for `Engineering Faculty Labs` and click the respective `Live Preview` button. If you went all-in on the theme and already have it activated, you'll find it in the first position with a `Customize` button ― Go ahead and click that.
 
 ### The Customizer
 
+This is where all of the theme magic happens! You can set information about your website and how it relates to the School of Engineering from the `Site Identity` sub-section, match your department's colors from the `Colors` sub-section and personalize what goes in the sidebar, footer and call-out areas from the `Widgets` sub-section.
 
+Speaking of call-out areas, by default this theme shows an example of what you can do with the `Page Bottom` widget area. If you don't care to show off the example to your visitors, add a blank text widget to it. On the other hand, if you like it, add a custom html widget, give it a title and copy+paste the following code snippet into the content input-area and edit how you see fit:
+
+```html
+<p>
+  This is just an example shown for the theme preview. You can add text widgets here to put whatever you'd like.
+</p>
+<button type="button" class="btn btn-hollow btn-lg">Call To Action Button</button>
+```
