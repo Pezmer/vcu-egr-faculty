@@ -32,7 +32,10 @@ Speaking of call-out areas, by default this theme shows an example of what you c
 
 ```html
 <p>
-  This is just an example shown for the theme preview. You can add text widgets here to put whatever you'd like.
+  This is just an example shown for the theme preview.
+  You can add text widgets here to put whatever you'd like.
 </p>
-<button type="button" class="btn btn-hollow btn-lg">Call To Action Button</button>
+<button type="button" class="btn btn-hollow btn-lg">
+  Call To Action Button
+</button>
 ```
