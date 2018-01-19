@@ -37,9 +37,9 @@ Speaking of personalizing call-out areas, by default this theme shows an example
   This is just an example shown for the theme preview.
   You can add text widgets here to put whatever you'd like.
 </p>
-<button type="button" class="btn btn-hollow btn-lg">
+<a href="https://vcu.edu" class="btn btn-hollow btn-lg">
   Call To Action Button
-</button>
+</a>
 ```
 
 Take a look at your sidebar in the preview pane. Now click into the `EGR Sidebar (custom)` widget area...and you'll see that there's nothing there, yet there's a search bar and your email address in the preview pane?!? Well, we used a little bit of that theme magic to make it happen. If you don't like your email address front and center, add a *Text* widget and either leave it blank or populate it how you see fit.
