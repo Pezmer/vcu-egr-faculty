@@ -56,7 +56,7 @@
         <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
         <h3 class="site-school">
           <?php if (get_theme_mod( 'school_name', true ) == true): ?>
-            <a href="https://egr.vcu.edu">School of Engineering</a>
+            <a href="https://egr.vcu.edu">College of Engineering</a>
           <?php endif; ?>
         </div>
         </div></div>
@@ -78,7 +78,7 @@
             <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
             <h3 class="site-school">
               <?php if (get_theme_mod( 'school_name', true ) == true): ?>
-                <a href="https://egr.vcu.edu">School of Engineering</a>
+                <a href="https://egr.vcu.edu">College of Engineering</a>
               <?php endif; ?>
             </h3>
           </div>
