@@ -132,7 +132,7 @@ function mytheme_customize_register( $wp_customize ) {
 		$wp_customize, 
 		'school_name', 
 		array(
-			'label'      => __( 'Display "School of Engineering" under lab and department', 'flat-bootstrap-egr-faculty' ),
+			'label'      => __( 'Display "College of Engineering" under lab and department', 'flat-bootstrap-egr-faculty' ),
 			'section'    => 'title_tagline',
 			'settings'   => 'school_name',
 			'type'			 => 'checkbox',
