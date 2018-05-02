@@ -10,7 +10,7 @@ This theme is strategically tucked away in the electronic vaults of [VCU&rsquo;s
 
 First, you will need to have created an account on the ALT Lab hosted WordPress server, [https://rampages.us/](https://rampages.us/).
 
-Second, you will need to send an email to Ken Kim <[kimkd@vcu.edu](mailto:kimkd@vcu.edu)> with the following information:
+Second, you will need to submit an [Engineering web request ticket](https://egr.vcu.edu/resources/communications/web-request/) with the following information:
 
 * Your VCU email address (Yes, this seems redundant, but it&rsquo;s completely necessary.)
 * The URL of your blog/website
